@@ -1,6 +1,18 @@
+.dot {
+    font-family:arial;
+    font-size: 1.5em;
+}
+
+.phone {
+  color:#ffffff;
+}
+
+footer a {
+  color:#ffffff;
+}
 
   body {
-   font: 24px Helvetica;
+   font: 24px Helvetica #FFFFFF;
    background: #3A2C2D;
   }
 
@@ -50,15 +62,29 @@
            order: 3;
    }
  
-  header, footer {
+  header {
     font-family: 'Lobster', cursive;
-    Font-size: 3em;
+    font-size: 3em;
     color:#ABE698;
     text-align:center;
     display: block;
     margin: 4px;
     padding: 5px;
     min-height: 100px;
+    border: 1px solid #ABE698;
+    border-radius: 7pt;
+    background: #553D4E;
+   }
+   
+   footer {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.75em;
+    color:#FFFFFF;
+    text-align:center;
+    display: block;
+    margin: 4px;
+    padding: 5px;
+    min-height: 50px;
     border: 1px solid #ABE698;
     border-radius: 7pt;
     background: #553D4E;
