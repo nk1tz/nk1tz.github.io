@@ -10,4 +10,4 @@ Tools used for this project:
 
 [DecodeMTL](www.decodemtl.com)
 
-<img src="http://placekitten.com/200/300"></img>
+<img src="http://placekitten.com/200/301"></img>
