@@ -18,7 +18,13 @@ footer a {
 }
 
 
-
+.thumbnail:hover {
+    position:relative;
+    width:100%;
+    height:auto;
+    display:block;
+    z-index:999;
+}
 
 
 img.profile-pic {
@@ -91,6 +97,7 @@ img.profile-pic {
    }
  
   #main > article {
+   text-align:center;
    margin: 4px;
    padding: 5px;
    border: 1px solid #ABE698;
