@@ -7,9 +7,96 @@
   color:#ffffff;
 }
 
+header h1{
+  display:block;
+  margin:auto;
+
+}
+
 footer a {
   color:#ffffff;
 }
+
+nav p{
+    text-align:center;
+    font-family: Raleway;
+}
+
+article{
+    text-align:center;
+    font-family: Raleway;
+}
+
+/*.thumbnail:hover {*/
+/*    position:relative;*/
+/*    width:100%;*/
+/*    height:auto;*/
+/*    display:block;*/
+/*    z-index:999;*/
+/*}*/
+
+
+.uncentered{
+    text-alignt: left;
+}
+
+
+.profile-pic {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  border-radius:50%;
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 8000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(0.78, 0.01, 0.42, 1);
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform:rotate(0deg);
+  }
+
+  to {
+    -webkit-transform:rotate(360deg);
+  }
+}
+
+
+
+.nav-animate {
+  margin: 0 auto;
+  background-color: red;
+  animation-name: stretch;
+  animation-duration: 8000ms; 
+  animation-timing-function: ease-out; 
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+@keyframes stretch {
+  0% {
+    transform: scale(1);
+    border-radius: 40pt;
+    background-color: #747933;
+    opacity: 0.1;
+  }
+
+  100% {
+    background-color: #747933;
+    transform: scale(1);
+    opacity: 1;
+    border-radius: 10pt;
+  }
+}
+
+
+
+
+
 
   body {
    font: 24px Helvetica #FFFFFF;
@@ -27,10 +114,11 @@ footer a {
    }
  
   #main > article {
+   text-align:center;
    margin: 4px;
    padding: 5px;
-   border: 1px solid #ABE698;
-   border-radius: 7pt;
+   border: 0px solid #ABE698;
+   border-radius: 10pt;
    background: #C8CBCF;
    -webkit-flex: 3 1 60%;
            flex: 3 1 60%;
@@ -41,9 +129,12 @@ footer a {
   #main > nav {
    margin: 4px;
    padding: 5px;
-   border: 1px solid #ABE698;
-   border-radius: 7pt;
-   background: #747933;
+   border: 0px solid #ABE698;
+   border-radius: 10pt;
+   background-image: url(http://i.imgur.com/240cc7I.jpg);
+   background-size: cover;
+   min-height: 100px;
+
    -webkit-flex: 1 6 20%;
            flex: 1 6 20%;
    -webkit-order: 1;
@@ -53,8 +144,8 @@ footer a {
   #main > aside {
    margin: 4px;
    padding: 5px;
-   border: 1px solid #ABE698;
-   border-radius: 7pt;
+   border: 0px solid #ABE698;
+   border-radius: 10pt;
    background: #85ACB5;
    -webkit-flex: 1 6 20%;
            flex: 1 6 20%;
@@ -71,8 +162,8 @@ footer a {
     margin: 4px;
     padding: 5px;
     min-height: 100px;
-    border: 1px solid #ABE698;
-    border-radius: 7pt;
+    border: 0px solid #ABE698;
+    border-radius:10pt;
     background: #553D4E;
    }
    
@@ -85,8 +176,8 @@ footer a {
     margin: 4px;
     padding: 5px;
     min-height: 50px;
-    border: 1px solid #ABE698;
-    border-radius: 7pt;
+    border: 0px solid #ABE698;
+    border-radius:10pt;
     background: #553D4E;
    }
  
@@ -104,8 +195,9 @@ footer a {
             order: 0;
    }
   
-   #main > nav, #main > aside, header, footer {
-    min-height: 50px;
-    max-height: 50px;
-   }
+   /*#main > nav, #main > aside, header, footer {*/
+   /* min-height: 50px;*/
+   /* max-height: 50px;*/
+   /*}*/
+   
   }
