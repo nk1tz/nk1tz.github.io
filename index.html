@@ -2,166 +2,343 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Nathaniel Kitzke - nk1tz</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nathaniel Kitzke - nk1tz</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
-	<!-- Override CSS file - add your own CSS rules -->
-	<link rel="stylesheet" href="normalize.css" type="text/css">
-	<link rel="stylesheet" href="foundation.css" type="text/css">
-	<link rel="stylesheet" href="main.css" type="text/css">
-	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-	<script src="script.js"></script>
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!--Google Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css" type="text/css">
 
 </head>
 
 <body>
+    <div class="navbar-wrapper">
+        <div class="container">
 
-	<div class="header">
-		<h1 class="header-heading">nk1tz</h1>
-	</div>
-	<nav>
-		<ul class="nav">
-			<li><a href="#">Nav item 1</a></li>
-			<li><a href="#">Nav item 2</a></li>
-			<li><a href="#">Nav item 3</a></li>
-		</ul>
-	</nav>
+            <nav class="navbar navbar-inverse navbar-static-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Nathaniel Kitzke</a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Curriculum Vitae</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Photo</a></li>
+                                    <li><a href="#">UI</a></li>
+                                    <li><a href="#">Projects</a></li>
+                                    <!--<li role="separator" class="divider"></li>-->
+                                    <!--<li class="dropdown-header">Nav header</li>-->
+                                    <!--<li><a href="#">Separated link</a></li>-->
+                                    <!--<li><a href="#">One more separated link</a></li>-->
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
 
-	<div class="container">
+        </div>
+    </div>
 
-		<div class="content">
-			<div class="main">
+    <!-- Picures of Me
+    ================================================== -->
+    <div class="profile-pic-wrapper">
+        <img src="https://s.gravatar.com/avatar/3d2b923434858cb11c3848a308437a19?s=300" class="profile-pic" />
+    </div>
 
-				<h1>Hi, I'm Nathaniel Kitzke</h1>
-				<hr>
 
-				<!-- Heading levels -->
-				<h1>Heading level 1</h1>
-				<h2>Heading level 2</h2>
-				<h3>Heading level 3</h3>
-				<h4>Heading level 4</h4>
-				<h5>Heading level 5</h5>
-				<h6>Heading level 6</h6>
-				<hr>
 
-				<!-- Paragraphs -->
-				<h3>Paragraphs</h3>
-				<p>Ut wisi enim ad minim veniam, <a href="#">quis nostrud exerci tation ullamcorper</a> suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore
-					eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-					tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-				<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te
-					feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-					lobortis nisl ut aliquip ex ea commodo consequat.</p>
-				<hr>
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Photo</h1>
+                        <p>How can a moment be encapsulated?</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>UI</h1>
+                        <p>How can we play with data?</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">See my works</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Developer</h1>
+                        <p>Algorithms, what are they made of?</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">See my projects</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-- /.carousel -->
 
-				<!-- Responsive images -->
-				<h3>Responsive images</h3>
-				<p>For images to be responsive (so that they will rescale to suit the width of the parent, use the <code>.img-responsive</code> class.</p>
-				<p><img class="img-responsive" src="http://placehold.it/800x350" alt=""></p>
 
-				<!-- Lists -->
-				<h3>Unordered list</h3>
-				<p>Unordered lists are used to markup lists where list items do not require numbering.</p>
-				<ul>
-					<li>Ut wisi enim ad minim veniam</li>
-					<li>Quis nostrud exerci tation</li>
-					<li>Lamcorper suscipit lobortis nis</li>
-					<li>Ut aliquip ex ea commodo consequat</li>
-					<li>Duis autem vel eum iriure dolor</li>
-				</ul>
-				<hr>
+    <!--Page contents
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
 
-				<h3>Ordered list</h3>
-				<p>Ordered lists are used to markup lists where list items require numbering.</p>
-				<ol>
-					<li>Hendrerit in vulputate velit esse</li>
-					<li>Olestie consequat</li>
-					<li>Vel illum dolore eu feugiat</li>
-					<li>Nulla facilisis at vero eros</li>
-					<li>Accumsan et iusto odio</li>
-				</ol>
-				<hr>
+    <div class="container marketing">
 
-				<h3>Unstyled list</h3>
-				<p>You can make the list unstyled using the <code>list-unstyled</code> class.</p>
-				<ul class="list-unstyled">
-					<li>Ut wisi enim ad minim veniam</li>
-					<li>Quis nostrud exerci tation</li>
-					<li>Lamcorper suscipit lobortis nis</li>
-					<li>Ut aliquip ex ea commodo consequat</li>
-					<li>Duis autem vel eum iriure dolor</li>
-				</ul>
-				<hr>
+        <!-- Social Media Icons -->
+        <div class="row fucking-social-stuff">
+            <a class="col-sm-3" href="https://github.com/nk1tz">
+                <img class="fucking-social-logo" src="images/githublogo.png">
+            </a>
+            <a class="col-sm-3" id="linkedin" href="https://www.linkedin.com/in/nathaniel-kitzke-707b9452">
+                <img class="fucking-social-logo" src="images/linklogo.png">
+            </a>
+            <a class="col-sm-3" href="https://twitter.com/nk1tz">
+                <img class="fucking-social-logo" src="images/twitlogo.png">
+            </a>
+            <a class="col-sm-3" href="https://medium.com/@nk1tz">
+                <img class="fucking-social-logo" src="images/mediumlogo.png">
+            </a>
+        </div>
+        <!-- /.row -->
 
-				<h3>Inline list</h3>
-				<p>You can make the list display inline using the <code>list-inline</code> class.</p>
-				<ul class="list-inline">
-					<li>One</li>
-					<li>Two</li>
-					<li>Three</li>
-					<li>Four</li>
-				</ul>
-				<hr>
+        <!--About Section-->
+        <div class="row about-section">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">About Nathaniel</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="well">
+                        <p>Hailing from the land of drift wood, grow ops and beastly ravens comes a bilingual french canadian 90's child.</p>
+                        <p>As an engineering student he built devices that aid those with physical disabilities, he launched an on-going student team to build research satellites, and he contributed to the improvement of mankinds ability to peer more clearly into deep space.</p>
+                        <p>He resides in Montreal since 2012 where he has worked on two large hospital design projects with the large engineering firm SNC-Lavalin doing primarily energy flow analysis and computational fluid simulations. 
+                        </p>
+                        <p> When he left the firm in 2014, he broadened his field of interests taking up pottery and slacklining, and travelled abroad to go rock climbing in south east asia where he also explored the philosophies of buddhism at various mediation retreats. Today he is actively engaged with the concept of open value networks at Sensorica, and exploring the technological basis for decentralized applications.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-				<!-- Blockquotes -->
-				<h3>Blockquotes</h3>
-				<p>The blockquote element is used to markup long quotations. Ideally, content inside should be wrapped in paragraph elements.</p>
-				<blockquote>
-					<p>The real names of our people were destroyed during slavery. The last name of my forefathers was taken from them when they were brought to America and made slaves, and then the name of the slave master was given, which we refuse, we reject that name
-						today and refuse it. I never acknowledge it whatsoever.</p>
-					<footer><a href="http://en.wikipedia.org/wiki/Malcolm_X">Malcolm X</a></footer>
-				</blockquote>
-				<hr>
+    <!--Begin Curriculum Vitae Section-->
+    
+        <div class="row curriculum-vitae">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Curriculum Vitae</h3>
+                </div>
+            </div>
+        </div>
+    
+        <!--Education-->
+         <div class="row education-title">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">Education</h4>
+                </div>
+            </div>
+        </div>
 
-				<h3>Buttons</h3>
-				<p>You can apply the <code>btn</code> class to any element that requires a button style.</p>
-				<p><a href="#" class="btn">Submit</a></p>
-				<hr>
+        <div class="row education">
+            <div class="col-md-4">
+                <img class="img-circle" src="images/decodelogo.png" width="140" height="140">
+                <h2>DecodeMTL</h2>
+                <p>Attended their inaugural 2 month, full-time intensive web development bootcamp in Septembre and October of 2015.</p>
+                <p><a class="btn btn-default" href="http://www.decodemtl.com/web-development-full-time/" role="button">View details &raquo;</a></p>
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-md-4">
+                <img class="img-circle" src="images/uviclogo.png" width="140" height="140">
+                <h2>University of Victoria</h2>
+                <p>B.Eng in Mechanical Engineering with a specialization in computational fluid dynamics (CFD).</p>
+                <p><a class="btn btn-default" href="http://www.uvic.ca/engineering/mechanical/current/undergraduate/courses/index.php#standard" role="button">View details &raquo;</a></p>
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-md-4">
+                <img class="img-circle" src="images/brodeurlogo.png" width="140" height="140">
+                <h2>École Victor Brodeur</h2>
+                <p>French IB education allowed me to graduate high school equipped with a powerful bilingualism which I continue to nuture. </p>
+                <p><a class="btn btn-default" href="http://brodeur.csf.bc.ca/" role="button">View details &raquo;</a></p>
+            </div>
+            <!-- /.col-lg-4 -->
+        </div>
+        <!-- /.row -->
 
-				<!-- Tables -->
-				<h3>Tables</h3>
-				<p>Tables should be given the class of <code>table</code>.</p>
-				<table class="table table-striped">
-					<thead>
-						<tr>
-							<th>#</th>
-							<th>First Name</th>
-							<th>Last Name</th>
-							<th>Username</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<th scope="row">1</th>
-							<td>Mark</td>
-							<td>Otto</td>
-							<td>@mdo</td>
-						</tr>
-						<tr>
-							<th scope="row">2</th>
-							<td>Jacob</td>
-							<td>Thornton</td>
-							<td>@fat</td>
-						</tr>
-						<tr>
-							<th scope="row">3</th>
-							<td>Larry</td>
-							<td>the Bird</td>
-							<td>@twitter</td>
-						</tr>
-					</tbody>
-				</table>
+         <!--rofessional experience section-->
+         <div class="row professional-exp-title">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">Professional Experience</h4>
+                </div>
+            </div>
+        </div>
 
-			</div>
-		</div>
-		<div class="footer">
-			&copy; Copyright 2015
-		</div>
-	</div>
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">SNC-Lavalin <span class="text-muted">Projet Hospitalier <a href="https://cusm.ca/glen/dashboard">CUSM</a> and <a href="https://fiers.snclavalin.com/fr/projets/projet-d-agrandissement-du-chu-sainte-justine-62">CHUSJ</a>.</span></h2>
+                <p class="lead">Did energy consumption and loss estimates for CUSM hospital project during internship in 2010. In 2012-2014, did wind, smoke and fire simulations as well as project-wide energy flow and heat exchange analysis for CHUSJ hospital project.</p>
+            </div>
+            <div class="col-md-5">
+                <a href="www.snclavalin.com/"><img class="featurette-image img-responsive center-block" src="images/snclavalin.png"></a>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 col-md-push-5">
+                <h2 class="featurette-heading">UVic Adaptive Optics Lab <span class="text-muted"><a href="http://web.uvic.ca/~ravenmoa/">RAVEN</a> project</span></h2>
+                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            </div>
+            <div class="col-md-5 col-md-pull-7">
+                <a href="http://web.uvic.ca/~ravenmoa/"><img class="featurette-image img-responsive center-block" src="images/raven.png"></a>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!--SKills section-->
+         <div class="row skills-title">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">Relevant Skills</h4>
+                </div>
+            </div>
+        </div>
+        
+        <!--Progress bar skilllllls-->
+        <div class="row featurette front-end-skills ">
+            <h2 class="featurette-heading">Front-End <span class="text-muted">stack.</span></h2>
+            <div class="col-md-4">
+                <h4>JavaScript</h4>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+                    <span class="sr-only">45% Complete</span>
+                  </div>
+                </div>
+                <h4>CSS HTML Frameworks <span class="text-muted">(e.g. Bootstrap, Foundation)</span></h4>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+                    <span class="sr-only">45% Complete</span>
+                  </div>
+                </div>
+                <h4>Workflow <span class="text-muted">(e.g. Grunt, Gulp)</span></h4>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+                      
+                    <span class="sr-only">45% Complete</span>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h4>Adobe Photoshop</h4>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+                    <span class="sr-only">45% Complete</span>
+                  </div>
+                </div>
+                <div class="progress">
+                    <h4>SASS</h4>
+                  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+                    <span class="sr-only">45% Complete</span>
+                  </div>
+                </div>
+                <div class="progress">
+                    <h4>Data Visuals <span class="text-muted">(e.g. highcharts, chartsjs)</span></h4>
+                  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+                    <span class="sr-only">45% Complete</span>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h4>App architecture <span class="text-muted">(e.g. React, Flux, Backbone)</span></h4>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+                    <span class="sr-only">45% Complete</span>
+                  </div>
+                </div>
+                <h4>Web Components <span class="text-muted">(e.g. Polymer)</span></h4>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+                    <span class="sr-only">45% Complete</span>
+                  </div>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+                    <span class="sr-only">45% Complete</span>
+                  </div>
+                </div>
+            </div>
+           
+        </div>
+
+        <hr class="featurette-divider">
+
+
+        <!-- /END THE FEATURETTES -->
+
+
+        <!-- FOOTER -->
+        <footer>
+            <p class="pull-right"><a href="#">Back to top</a></p>
+            <p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
 
 </html>

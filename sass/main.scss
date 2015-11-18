@@ -1,283 +1,270 @@
-/* -----------------------
-Base styles
-------------------------*/
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
 
-body
-{
-	margin: 0;
-	padding: 0;
-	color: #333;
-	background-image: url(http://www.dailypicsupdate.com/wp-content/uploads/2013/03/amezing-Forest-desktop-background.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center; 
-	
-	font: 1em/1.2 "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+$mainColor: lavender;
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+  background-color: $mainColor;
 }
 
-h1,h2,h3,h4,h5,h6
-{
-	margin: 0 0 .5em;
-	font-weight: 500;
-	line-height: 1.1;
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 23;
 }
 
-h1 { font-size: 2.25em; } /* 36px */
-h2 { font-size: 1.75em; } /* 28px */
-h3 { font-size: 1.375em; } /* 22px */
-h4 { font-size: 1.125em; } /* 18px */
-h5 { font-size: 1em; } /* 16px */
-h6 { font-size: .875em; } /* 14px */
-
-p {
-	margin: 0 0 1.5em;
-	line-height: 1.5;
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
 }
 
-blockquote
-{
-	padding: 1em 2em;
-	margin: 0 0 2em;
-	border-left: 5px solid #eee;
+
+/* CUSTOMIZE THE Profile PIC
+-------------------------------------------------- */
+.profile-pic-wrapper{
+	text-align: center;
+}
+.profile-pic {
+	border-radius: 50%;
+	position: absolute;
+	z-index: 22;
+	transform: translate(-50%, 40%);
 }
 
-hr
-{
-	height: 0;
-	margin-top: 1em;
-	margin-bottom: 2em;
-	border: 0;
-	border-top: 1px solid #ddd;
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 700px;
+  margin-bottom: 10px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
 }
 
-table
-{
-	background-color: transparent;
-	border-spacing: 0;
-	border-collapse: collapse;
-	border-top: 1px solid #ddd;
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 700px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 700px;
 }
 
-th, td
-{
-	padding: .5em 1em;
-	vertical-align: top;
-	text-align: left;
-	border-bottom: 1px solid #ddd;
+/* Social Media icons
+-------------------------------------------------- */
+.fucking-social-stuff{
+  margin-top: 40px;
+	z-index: 99;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.fucking-social-logo{
+	width: 100px;
+	z-index: 100;
 }
 
-a:link { color: royalblue; }
-a:visited { color: purple; }
-a:focus { color: black; }
-a:hover { color: green; }
-a:active { color: red; }
-
-/* -----------------------
-Layout styles
-------------------------*/
-
-.container
-{
-	position: relative;
-	max-width: 50em;
-	margin: 0 auto;
-
+/* About Section
+-------------------------------------------------- */
+.about-section{
+	text-align: center;
 }
 
-.header
-{
+.about-section h3{
 	font-family: 'Lobster', cursive;
-	font-size: 3em;
-	text-align:center;
-	color: #D8E450;
-	background: rgba(175,205,214,0);
-	padding:0;
-	margin:0;
+	font-size: 2.5em;
 }
 
-.header-heading { 
-	margin: 0; 
-	padding:0;
-
+.about-section .panel-body{
+  text-align:justify;
+  background-color: $mainColor;
+  padding-bottom:0;
 }
 
-nav{
-	text-align: center;
-	background: #000;
-
+/* CV section
+-------------------------------------------------- */
+.curriculum-vitae{
+  text-align: center;
+}
+.curriculum-vitae h3{
+  font-family: 'Lobster', cursive;
+	font-size: 2.5em;
 }
 
-.navbar-fixed {
-	z-index:1;
-	text-align: center;
-	background: #000;
-    top: 0;
-  	position: fixed;
-    width: 100%;
+/* Education section
+-------------------------------------------------- */
+.education-title .panel-default{
+  margin-bottom:0;
+}
+.education-title .panel-heading{
+  padding:0;
+}
+.education-title h4{
+  text-align: center;
+  font-family: 'Lobster', cursive;
+	font-size: 2em;
 }
 
-.content { 
-	
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#afcdd6+0,84b9d8+43,8eaab2+100&amp;0+0,0.28+5,0.3+5,0.29+9,0.3+92,0.24+93,0.28+96,0+100 */
-background: -moz-linear-gradient(left,  rgba(175,205,214,0) 0%, rgba(170,203,214,0.3) 5%, rgba(166,201,214,0.29) 9%, rgba(132,185,216,0.29) 43%, rgba(141,172,183,0.3) 92%, rgba(141,172,182,0.24) 93%, rgba(141,171,180,0.28) 96%, rgba(142,170,178,0) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(175,205,214,0)), color-stop(5%,rgba(170,203,214,0.3)), color-stop(9%,rgba(166,201,214,0.29)), color-stop(43%,rgba(132,185,216,0.29)), color-stop(92%,rgba(141,172,183,0.3)), color-stop(93%,rgba(141,172,182,0.24)), color-stop(96%,rgba(141,171,180,0.28)), color-stop(100%,rgba(142,170,178,0))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(left,  rgba(175,205,214,0) 0%,rgba(170,203,214,0.3) 5%,rgba(166,201,214,0.29) 9%,rgba(132,185,216,0.29) 43%,rgba(141,172,183,0.3) 92%,rgba(141,172,182,0.24) 93%,rgba(141,171,180,0.28) 96%,rgba(142,170,178,0) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(left,  rgba(175,205,214,0) 0%,rgba(170,203,214,0.3) 5%,rgba(166,201,214,0.29) 9%,rgba(132,185,216,0.29) 43%,rgba(141,172,183,0.3) 92%,rgba(141,172,182,0.24) 93%,rgba(141,171,180,0.28) 96%,rgba(142,170,178,0) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(left,  rgba(175,205,214,0) 0%,rgba(170,203,214,0.3) 5%,rgba(166,201,214,0.29) 9%,rgba(132,185,216,0.29) 43%,rgba(141,172,183,0.3) 92%,rgba(141,172,182,0.24) 93%,rgba(141,171,180,0.28) 96%,rgba(142,170,178,0) 100%); /* IE10+ */
-background: linear-gradient(to right,  rgba(175,205,214,0) 0%,rgba(170,203,214,0.3) 5%,rgba(166,201,214,0.29) 9%,rgba(132,185,216,0.29) 43%,rgba(141,172,183,0.3) 92%,rgba(141,172,182,0.24) 93%,rgba(141,171,180,0.28) 96%,rgba(142,170,178,0) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00afcdd6', endColorstr='#008eaab2',GradientType=1 ); /* IE6-9 */
-
-	padding: 1em 1.25em; 
-	
+.education .btn {
+  background-color:#C1C1E1;
 }
 
-.footer
-{
-	color: #fff;
-	background: #000;
-	padding: 1em 1.25em;
+/* Center align the text within the three columns below the carousel */
+.education {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.education .img-circle{
+  margin:0;
 }
 
-/* -----------------------
-Nav
-------------------------*/
-
-.nav
-{
-	margin: 0;
-	padding: 0;
-	list-style: none;
+/* Professional Experience
+-------------------------------------------------- */
+.professional-exp-title .panel-default{
+  margin-bottom:0;
+}
+.professional-exp-title .panel-heading{
+  padding:0;
+}
+.professional-exp-title h4{
+  text-align: center;
+  font-family: 'Lobster', cursive;
+	font-size: 2em;
+}
+.professional-exp-title{
+  margin-bottom: 25px;
 }
 
-.nav li
-{
-	display: inline;
+
+/* Skills!
+------------------------- */
+.front-end-skills h4{
+  font-size: 1em;
+}
+.front-end-skills .text-muted{
+  color: #A9A9A9;
 }
 
-.nav a
-{	
-	border:1px solid black ;
-	font-size: 1em;
-	display: block;
-	padding: .7em 1.25em;
-	color: #fff;
-	text-decoration: none;
+
+
+/* Thin out the marketing headings */
+
+.featurette-heading {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+.featurette-heading .text-muted{
+  color: #A7A7A7; 
+}
+.featurette-heading .text-muted a{
+  color: #A7A7A7; 
+}
+.featurette .lead{
+  font-size:16px;
+}
+.featurette-image{
+  height:160px;
+  width:auto;
 }
 
-.nav a:link { color: white; }
-.nav a:visited { color: white; }
-
-.nav a:focus
-{
-	color: black;
-	background-color: white;
+/* Skills Sections
+-------------------------------------------------- */
+.skills-title .panel-default{
+  margin-bottom:0;
+}
+.skills-title .panel-heading{
+  padding:0;
+}
+.skills-title h4{
+  text-align: center;
+  font-family: 'Lobster', cursive;
+	font-size: 2em;
+}
+.skills-title{
+  margin-bottom: 25px;
 }
 
-.nav a:hover
-{
-	color: white;
-	border:1px solid #43453a ;
-	background: rgba(20,200,20,0.2);
-}
 
-.nav a:active
-{
-	color: white;
-	background-color: red;
-}
+/* RESPONSIVE CSS
+-------------------------------------------------- */
 
-/* -----------------------
-Single styles
-------------------------*/
-
-.img-responsive { max-width: 100%; }
-
-.btn
-{
-	color: #fff !important;
-	background-color: royalblue;
-	border-color: #222;
-	display: inline-block;
-	padding: .5em 1em;
-	margin-bottom: 0;
-	font-weight: 400;
-	line-height: 1.2;
-	text-align: center;
-	white-space: nowrap;
-	vertical-align: middle;
-	cursor: pointer;
-	border: 1px solid transparent;
-	border-radius: .2em;
-	text-decoration: none;
-}
-
-.btn:hover
-{
-	color: #fff !important;
-	background-color: green;
-}
-
-.btn:focus
-{
-	color: #fff !important;
-	background-color: black;
-}
-
-.btn:active
-{
-	color: #fff !important;
-	background-color: red;
-}
-
-.table
-{
-	width: 100%;
-	max-width: 100%;
-	margin-bottom: 20px;
-}
-
-.list-unstyled
-{
-	padding-left: 0;
-	list-style: none;
-}
-
-.list-inline
-{
-	padding-left: 0;
-	margin-left: -5px;
-	list-style: none;
-}
-
-.list-inline > li
-{
-	display: inline-block;
-	padding-right: 5px;
-	padding-left: 5px;
-}
-
-/* -----------------------
-Wide styles
-------------------------*/
-
-@media (min-width: 42em)
-{
-	.header { padding: 1.5em 3em; }
-	.nav-bar { padding: 1em 3em; }
-	.content { padding: 2em 3em; }
-	.footer { padding: 2em 3em; }
-	
-	.nav li
-	{
-		display: inline;
-		margin: 0 1em 0 0;
+@media (max-width: 768px) {
+	.fucking-social-logo{
+		width: 60px;
 	}
-	
-	.nav a
-	{
-		display: inline;
-		padding: 0;
-		border-bottom: 0;
+	.about-section{
+	  min-width:100%;
 	}
 }
+
+@media (max-width: 1024px) {
+	.about-section{
+	  min-width:87%;
+	}
+}
+@media (min-width: 1025px) {
+	.about-section{
+	  min-width:75%;
+	}
+}
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+}
+
