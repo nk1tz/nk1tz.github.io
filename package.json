@@ -1,0 +1,28 @@
+{
+  "name": "nk1tz",
+  "version": "1.0.0",
+  "description": "README.md re-written on 2015-09-07 ================================",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nk1tz/nk1tz.github.io.git"
+  },
+  "author": "nathaniel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nk1tz/nk1tz.github.io/issues"
+  },
+  "homepage": "https://github.com/nk1tz/nk1tz.github.io",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-sass": "^1.1.0",
+    "load-grunt-tasks": "^3.3.0"
+  },
+  "dependencies": {
+    "grunt": "^0.4.5"
+  }
+}

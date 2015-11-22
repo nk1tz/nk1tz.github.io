@@ -1,0 +1,364 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+$mainColor: lavender;
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+  background-color: $mainColor;
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 23;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+/* CUSTOMIZE THE Profile PIC
+-------------------------------------------------- */
+.profile-pic-wrapper{
+	text-align: center;
+}
+.profile-pic {
+	border-radius: 50%;
+	position: absolute;
+	z-index: 22;
+	transform: translate(-50%, 40%);
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+/* Carousel base class */
+.carousel {
+  width: vw;
+  height: 700px;
+  margin-bottom: 10px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 700px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 700px;
+}
+
+/* Social Media icons
+-------------------------------------------------- */
+.fucking-social-stuff{
+  margin-top: 40px;
+	z-index: 99;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.fucking-social-logo{
+	width: 100px;
+	z-index: 100;
+}
+
+
+/* PAGE CONTENTS AND SECTIONS Centering
+-------------------------------------------------- */
+.section1{
+  
+}
+.section2 {
+  background-image:url(/images/sectionbg4.png);
+  background-size: cover;
+  background-position: center center;    
+  background-repeat:none;
+  text-align: center;
+}
+.section3{
+  width:70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section4{
+  width:75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* About Section
+-------------------------------------------------- */
+.about-section{
+  margin-right:auto;
+  margin-left:auto;
+  width:75%;
+	text-align: center;
+}
+
+.about-section h3{
+	font-family: 'Lobster', cursive;
+	font-size: 2.5em;
+}
+
+.about-section .text-on-bg{
+  text-align:justify;
+  padding-bottom:0;
+  font-size: 1.3em;
+  color:black;
+}
+
+.about-section .text-on-bg p{
+  margin-top:5vh;
+  text-shadow: -2px 2px 2px #fff;
+}
+.about-section .panel-body{
+  text-align: justify;
+}
+
+/* CV section
+-------------------------------------------------- */
+.curriculum-vitae{
+  text-align: center;
+}
+.curriculum-vitae h3{
+  font-family: 'Lobster', cursive;
+	font-size: 2.5em;
+}
+
+/* Education section
+-------------------------------------------------- */
+.education-title .panel-default{
+  margin-bottom:0;
+}
+.education-title .panel-heading{
+  padding:0;
+}
+.education-title h4{
+  text-align: center;
+  font-family: 'Lobster', cursive;
+	font-size: 2em;
+}
+
+.education .btn {
+  background-color:#C1C1E1;
+}
+
+/* Center align the text within the three columns below the carousel */
+.education {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.education  h2 {
+  font-weight: normal;
+}
+.education .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.img-circle{
+  margin:0;
+}
+
+/* Professional Experience
+-------------------------------------------------- */
+.professional-exp-title .panel-default{
+  margin-bottom:0;
+}
+.professional-exp-title .panel-heading{
+  padding:0;
+}
+.professional-exp-title h4{
+  text-align: center;
+  font-family: 'Lobster', cursive;
+	font-size: 2em;
+}
+.professional-exp-title{
+  margin-bottom: 25px;
+}
+
+
+/* Skills!
+------------------------- */
+.skills h4{
+  font-size: 16px;
+}
+.skills .text-muted{
+  color: #A9A9A9;
+}
+
+
+
+/* Thin out the marketing headings */
+
+.featurette-heading {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+.featurette-heading .text-muted{
+  color: #A7A7A7; 
+}
+.featurette-heading .text-muted a{
+  color: #A7A7A7; 
+}
+.featurette .lead{
+  font-size:16px;
+}
+.featurette-image{
+  height: 100px;
+  width:auto;
+}
+
+/* Skills Sections
+-------------------------------------------------- */
+.skills-title .panel-default{
+  margin-bottom:0;
+}
+.skills-title .panel-heading{
+  padding:0;
+}
+.skills-title h4{
+  text-align: center;
+  font-family: 'Lobster', cursive;
+	font-size: 2em;
+}
+.skills-title{
+  margin-bottom: 25px;
+}
+.skills{
+  border: solid 3px #EEEEEE;
+  border-radius:10px;
+}
+
+.skills .featurette-heading{
+  padding-left:10px;
+}
+
+
+/* Contact Sections
+-------------------------------------------------- */
+.header {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 10px;
+}
+.form-group i{
+  font-size: 35px;
+  color: #36A0FF;
+}
+
+/*FOOTER
+-----------------------------------------*/
+footer{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (max-width: 768px) {
+	.fucking-social-logo{
+		width: 60px;
+	}
+	.about-section{
+	  min-width:100%;
+	}
+}
+
+// For the Smaller Mobile devices  (phones)
+@media (max-width: 410px) {
+  .fucking-social-stuff a{
+    padding:0;
+  }
+  .carousel {
+    height: 600px;
+  }
+  .carousel .item {
+    height: 600px;
+  }
+  .carousel-inner > .item > img {
+    height: 600px;
+  }
+  .profile-pic {
+    transform: translate(-50%, 20%);
+  }
+  
+}
+
+@media (max-width: 1024px) {
+	.about-section{
+	  min-width:87%;
+	}
+}
+@media (min-width: 1025px) {
+	.about-section{
+	  min-width:75%;
+	}
+}
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+  
+  /* Section Heights mostly */
+  .section1{
+    height: 100vh;
+  }
+  .section2{
+    height: 100vh;
+  }
+  .section4{
+    height: 88vh;
+  }
+}
+

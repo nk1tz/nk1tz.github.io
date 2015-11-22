@@ -11,3 +11,11 @@ Tools used for this project:
 [DecodeMTL](www.decodemtl.com)
 
 <img src="http://placekitten.com/200/301"></img>
+
+## SASS ::: --- >>> ballerama
+have to recompile evertim:
+## do this evertim:
+sass sass/main.scss css/main.css
+
+## while developing...
+sass --watch sass/main.scss:css/main.css
