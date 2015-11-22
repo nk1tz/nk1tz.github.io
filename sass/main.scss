@@ -10,7 +10,6 @@ body {
   background-color: $mainColor;
 }
 
-
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
@@ -36,7 +35,6 @@ body {
   width: auto;
 }
 
-
 /* CUSTOMIZE THE Profile PIC
 -------------------------------------------------- */
 .profile-pic-wrapper{
@@ -51,9 +49,9 @@ body {
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
-
 /* Carousel base class */
 .carousel {
+  width: vw;
   height: 700px;
   margin-bottom: 10px;
 }
@@ -88,9 +86,36 @@ body {
 	z-index: 100;
 }
 
+
+/* PAGE CONTENTS AND SECTIONS Centering
+-------------------------------------------------- */
+.section1{
+  
+}
+.section2 {
+  background-image:url(/images/sectionbg4.png);
+  background-size: cover;
+  background-position: center center;    
+  background-repeat:none;
+  text-align: center;
+}
+.section3{
+  width:70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section4{
+  width:75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* About Section
 -------------------------------------------------- */
 .about-section{
+  margin-right:auto;
+  margin-left:auto;
+  width:75%;
 	text-align: center;
 }
 
@@ -99,10 +124,19 @@ body {
 	font-size: 2.5em;
 }
 
-.about-section .panel-body{
+.about-section .text-on-bg{
   text-align:justify;
-  background-color: $mainColor;
   padding-bottom:0;
+  font-size: 1.3em;
+  color:black;
+}
+
+.about-section .text-on-bg p{
+  margin-top:5vh;
+  text-shadow: -2px 2px 2px #fff;
+}
+.about-section .panel-body{
+  text-align: justify;
 }
 
 /* CV section
@@ -138,14 +172,14 @@ body {
   margin-bottom: 20px;
   text-align: center;
 }
-.marketing h2 {
+.education  h2 {
   font-weight: normal;
 }
-.marketing .col-lg-4 p {
+.education .col-lg-4 p {
   margin-right: 10px;
   margin-left: 10px;
 }
-.education .img-circle{
+.img-circle{
   margin:0;
 }
 
@@ -169,10 +203,10 @@ body {
 
 /* Skills!
 ------------------------- */
-.front-end-skills h4{
-  font-size: 1em;
+.skills h4{
+  font-size: 16px;
 }
-.front-end-skills .text-muted{
+.skills .text-muted{
   color: #A9A9A9;
 }
 
@@ -196,7 +230,7 @@ body {
   font-size:16px;
 }
 .featurette-image{
-  height:160px;
+  height: 100px;
   width:auto;
 }
 
@@ -216,6 +250,35 @@ body {
 .skills-title{
   margin-bottom: 25px;
 }
+.skills{
+  border: solid 3px #EEEEEE;
+  border-radius:10px;
+}
+
+.skills .featurette-heading{
+  padding-left:10px;
+}
+
+
+/* Contact Sections
+-------------------------------------------------- */
+.header {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 10px;
+}
+.form-group i{
+  font-size: 35px;
+  color: #36A0FF;
+}
+
+/*FOOTER
+-----------------------------------------*/
+footer{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 
 /* RESPONSIVE CSS
@@ -228,6 +291,26 @@ body {
 	.about-section{
 	  min-width:100%;
 	}
+}
+
+// For the Smaller Mobile devices  (phones)
+@media (max-width: 410px) {
+  .fucking-social-stuff a{
+    padding:0;
+  }
+  .carousel {
+    height: 600px;
+  }
+  .carousel .item {
+    height: 600px;
+  }
+  .carousel-inner > .item > img {
+    height: 600px;
+  }
+  .profile-pic {
+    transform: translate(-50%, 20%);
+  }
+  
 }
 
 @media (max-width: 1024px) {
@@ -265,6 +348,17 @@ body {
     margin-bottom: 20px;
     font-size: 21px;
     line-height: 1.4;
+  }
+  
+  /* Section Heights mostly */
+  .section1{
+    height: 100vh;
+  }
+  .section2{
+    height: 100vh;
+  }
+  .section4{
+    height: 88vh;
   }
 }
 
